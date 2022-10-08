@@ -1,3 +1,21 @@
-p{
-    background-color: blue;
-}
+// utils
+@import "./utils/variables";
+@import "./utils/common";
+
+//header
+@import "./headerFooter/header";
+
+// indexComponents
+@import "./indexComponents/hero";
+@import "./indexComponents/modal";
+@import "./indexComponents/benefits";
+@import "./indexComponents/services";
+@import "./indexComponents/team";
+@import "./indexComponents/clients";
+
+// portfolioComponents
+@import "./portfolioComponents/filter";
+@import "./portfolioComponents/projects";
+
+//footer
+@import "./headerFooter/footer";
