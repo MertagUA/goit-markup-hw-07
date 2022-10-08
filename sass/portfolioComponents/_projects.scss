@@ -8,14 +8,14 @@
     margin-bottom: 30px;
 
     background-color: #ffffff;
-}
 
-.projects__item:nth-child(3n) {
+&:nth-child(3n) {
     margin-right: 0;
 }
 
-.projects__item:nth-child(n + 7) {
+&:nth-child(n + 7) {
     margin-bottom: 0;
+}
 }
 
 .projects__link:focus .overlay {
@@ -75,9 +75,7 @@
     margin-left: 24px;
     padding-top: 24px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font(18px, 700, 2);
     letter-spacing: 0.06em;
 
     color: var(--title-text-color);

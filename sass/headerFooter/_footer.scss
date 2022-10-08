@@ -45,12 +45,11 @@
 .footer__item--secondary {
     margin-top: 12px;
     margin-right: 93px;
-}
 
-.footer__item--secondary:last-child {
+&:last-child {
     margin-right: 0;
 }
-
+}
 .footer__text {
     margin-bottom: 20px;
 
@@ -70,19 +69,17 @@
     padding: 12px;
 
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-.card__item--black:hover {
+&:hover {
     cursor: pointer;
     background-color: var(--acent-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.card__item--black:focus-within {
+&:focus-within {
     background-color: var(--acent-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 .card__item--black:hover .card__link {
@@ -111,22 +108,20 @@
     background-color: var(--background-dark-color);
     color: var(--primary-white-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
-.form__input--footer::placeholder {
+&::placeholder {
     font-size: 16px;
     line-height: 1.25;
 
     color: rgba(255, 255, 255, 0.6);
 }
-
-.form__input--footer:focus {
+&:focus {
     border: 1px solid var(--acent-color);
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
 
-.form__wrap--button {
+.form__button--wrap {
     position: relative;
 }
 
@@ -140,9 +135,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(16px, 700, 1.88);
     text-align: start;
     letter-spacing: 0.06em;
 
